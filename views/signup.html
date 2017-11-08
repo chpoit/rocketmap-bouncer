@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RocketMap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #F8F8F8;
+        }
+        
+        input {
+            padding: 5px;
+        }
+        
+        form {
+            border: 1px solid rgb(87, 84, 84);
+            display: inline-block;
+            padding: 5px;
+        }
+        
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+        
+        #submitDiv {
+            text-align: center;
+        }
+        
+        #submitDiv>div {
+            text-align: center;
+            margin: 5px;
+        }
+        
+        #submitDiv a,
+        #submitDiv button {
+            display: block;
+            background-color: #d8d8dd;
+            border: none;
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            text-decoration: none;
+            text-transform: none;
+            color: rgb(15, 15, 15);
+        }
+        
+        #submitDiv button {
+            padding: 20px 0;
+        }
+        
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="signup" name="signup" method="post" action="/signup">
+        <div>
+            <label for="email">Courriel</label>
+            <input class="text" name="email" type="email" />
+        </div>
+
+        <div>
+            <label for="password">Mot de passe</label>
+            <input name="password" type="password" />
+        </div>
+
+        <div>
+            <label for="passwordConfirm">Confirmer le mot de passe</label>
+            <input name="passwordConfirm" type="password" />
+        </div>
+        <div>
+            <label for="code">Code spécial</label>
+            <input name="code" type="text" />
+        </div>
+
+        <div id="submitDiv">
+            <button class="btn" type="submit">Création</button>
+            <a href="/login">Retour à la connexion</a>
+        </div>
+    </form>
+
+</body>
+
+</html>

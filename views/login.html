@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RocketMap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #F8F8F8;
+        }
+        
+        input {
+            padding: 5px;
+        }
+        
+        form {
+            border: 1px solid rgb(87, 84, 84);
+            display: inline-block;
+            padding: 5px;
+        }
+        
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+        
+        #submitDiv {
+            text-align: center;
+        }
+        
+        #submitDiv>div {
+            text-align: center;
+            margin: 5px;
+        }
+        
+        #submitDiv a,
+        #submitDiv button {
+            display: block;
+            background-color: #d8d8dd;
+            border: none;
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            text-decoration: none;
+            text-transform: none;
+            color: rgb(15, 15, 15);
+        }
+        
+        #submitDiv button {
+            padding: 20px 0;
+        }
+        
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="login" name="login" method="post" action="/login">
+        <div>
+            <label for="email">Nom d'usager</label>
+            <input name="email" type="text" />
+        </div>
+        <div>
+            <label for="password">Mot de passe</label>
+            <input name="password" type="password" />
+        </div>
+        <div id="submitDiv">
+            <button class="btn" type="submit">Connexion</button>
+            <a href="/signup">S'inscrire</a>
+        </div>
+    </form>
+</body>
+
+</html>
