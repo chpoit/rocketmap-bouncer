@@ -1,3 +1,9 @@
+# This project has been abandonned since hashing is more or less gone.
+
+It can however be used as a base project to add a reverse-proxy that manages authentication on top of a secondary website/service/other.
+
+I have no idea how secure it is. Use at your own risk.
+
 # rocketmap-bouncer
 This is a nodejs reverse-proxy type-thing that allows you to add accounts to your rocketmap map, preventing unwanted people from using it.
 
